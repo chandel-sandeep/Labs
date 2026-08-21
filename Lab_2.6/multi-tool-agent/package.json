@@ -1,0 +1,27 @@
+{
+  "name": "multi-tool-agent",
+  "version": "1.0.0",
+  "description": "Lab 2.6 — Claude Agent SDK agent with three zod-validated tools, a confirmation guardrail, and a history-keeping REPL",
+  "main": "agent.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning agent.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.238",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}

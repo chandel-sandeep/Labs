@@ -1,0 +1,35 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // Environment Settings
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    // agent.ts is run directly by Node (`npm start`), which strips types
+    // rather than compiling them, so tsc is only used for type checking.
+    "noEmit": true,
+
+    // Node's type stripping cannot handle syntax that emits code (enums,
+    // namespaces, parameter properties). This flag makes tsc reject it too,
+    // so a type check that passes is guaranteed to run.
+    "erasableSyntaxOnly": true,
+
+    // Stricter Typechecking Options
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Recommended Options
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["*.ts"]
+}
