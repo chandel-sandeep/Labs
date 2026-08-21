@@ -1,0 +1,19 @@
+{
+  "name": "inventory-agent",
+  "version": "1.0.0",
+  "description": "Lab 2.3 — Agent SDK agent backed by an in-process MCP server",
+  "main": "inventory-agent.js",
+  "scripts": {
+    "start": "node inventory-agent.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.238",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  }
+}
